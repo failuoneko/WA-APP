@@ -16,7 +16,7 @@ struct ProductItemView: View {
     
     var body: some View {
         ZStack {
-            VStack {
+            VStack(alignment: .center, spacing: 0) {
                 topFixedArea
                 middleScrollView
                 bottomActionArea
@@ -45,7 +45,6 @@ struct ProductItemView: View {
                 }
             }
         }
-        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
@@ -219,7 +218,6 @@ extension ProductItemView {
                 .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
                 .background(Color(red: 0.949, green: 0.945, blue: 0.965))
                 .cornerRadius(6)
-//                .fixedSize()
                 .padding(.horizontal, 10)
             
             Button(action: {
