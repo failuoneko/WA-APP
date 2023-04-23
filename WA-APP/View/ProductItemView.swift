@@ -85,17 +85,27 @@ extension ProductItemView {
                     Spacer()
                     
                     HStack(spacing: 10) {
-                        Image(systemName: "square.and.arrow.up")
-                            .foregroundColor(.black)
-                            .frame(width: 40, height: 40)
-                            .background(Color(red: 0.949, green: 0.945, blue: 0.965))
-                            .clipShape(Circle())
-                        Image(systemName: "heart")
-                            .foregroundColor(.black)
-                            .frame(width: 40, height: 40)
-                            .background(Color(red: 0.949, green: 0.945, blue: 0.965))
-                            .clipShape(Circle())
+                        Button(action: {
+                            print("square.and.arrow.up")
+                        }) {
+                            Image(systemName: "square.and.arrow.up")
+                                .foregroundColor(.black)
+                                .frame(width: 40, height: 40)
+                                .background(Color(red: 0.949, green: 0.945, blue: 0.965))
+                                .clipShape(Circle())
+                        }
+                        
+                        Button(action: {
+                            print("heart")
+                        }) {
+                            Image(systemName: "heart")
+                                .foregroundColor(.black)
+                                .frame(width: 40, height: 40)
+                                .background(Color(red: 0.949, green: 0.945, blue: 0.965))
+                                .clipShape(Circle())
+                        }
                     }
+
                 }
                 
                 
